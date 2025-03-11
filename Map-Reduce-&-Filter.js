@@ -52,7 +52,7 @@ const companistotal = (acc, company) => acc + company.marketValue
 
 
 const marketValueOldCompaniesResto = companies
-.map (add10Percentes)
+.map (remove10Percentes)
 .filter(filterCompanies)
 .reduce(reduceCompanies,0)
 
